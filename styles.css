@@ -1,5 +1,5 @@
 /* =========================================================
-   TripTrakerDeduct — Material-ish Theme (CLEAN)
+   TripTrakerDeduct — Material-ish Theme (CLEAN & FIXED)
    ========================================================= */
 
 /* ---------- Design tokens ---------- */
@@ -15,7 +15,7 @@
   --border: #e5e7eb;
 
   --radius: 12px;
-  --shadow-soft: 0 3px 10px rgba(0,0,0,0.06);
+  --shadow-soft: 0 3px 10px rgba(0, 0, 0, 0.06);
 }
 
 /* ---------- Reset ---------- */
@@ -64,7 +64,7 @@ body {
 
 .tagline {
   margin: 8px 0 0;
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /* ---------- Download buttons ---------- */
@@ -87,7 +87,7 @@ body {
   border-radius: 999px;
   font-weight: 700;
 
-  border: 1px solid rgba(255,255,255,0.55);
+  border: 1px solid rgba(255, 255, 255, 0.55);
   box-shadow: var(--shadow-soft);
 
   transition: transform 0.12s ease, background 0.12s ease;
@@ -98,7 +98,7 @@ body {
   transform: translateY(-1px);
 }
 
-/* ---------- ICON FIX (IMPORTANT) ---------- */
+/* ---------- ICON SIZE FIX ---------- */
 .icon,
 .download-button svg {
   width: 18px;
@@ -140,7 +140,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ---------- Screenshots (no JS) ---------- */
+/* ---------- Screenshots (NO JS) ---------- */
 .shots {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -149,16 +149,20 @@ a:hover {
 }
 
 .shot {
+  margin: 0;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
-  background: rgba(0,0,0,0.03);
+  background: rgba(0, 0, 0, 0.03);
 }
 
 .shot img {
   width: 100%;
   height: auto;
+  max-height: 420px;
+  object-fit: contain;
   display: block;
+  background: #000;
 }
 
 .shot figcaption {
@@ -175,7 +179,7 @@ a:hover {
   padding: 24px 0 12px;
 }
 
-/* ---------- Mobile ---------- */
+/* ---------- Responsive ---------- */
 @media (max-width: 680px) {
   .header-inner {
     flex-direction: column;
@@ -191,6 +195,12 @@ a:hover {
     justify-content: center;
   }
 
+  .shots {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 900px) {
   .shots {
     grid-template-columns: 1fr;
   }
