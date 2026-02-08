@@ -141,6 +141,7 @@ a:hover {
 }
 
 /* ---------- Screenshots ---------- */
+/* 2-column by default */
 .shots {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -153,6 +154,11 @@ a:hover {
   border-radius: var(--radius);
   overflow: hidden;
   background: rgba(0, 0, 0, 0.03);
+}
+
+/* If a screenshot is “wide”, let it span both columns */
+.shot.wide {
+  grid-column: 1 / -1;
 }
 
 .shot img {
@@ -191,7 +197,13 @@ a:hover {
     justify-content: center;
   }
 
+  /* Always single-column on mobile */
   .shots {
     grid-template-columns: 1fr;
+  }
+
+  /* Wide still works fine */
+  .shot.wide {
+    grid-column: auto;
   }
 }
