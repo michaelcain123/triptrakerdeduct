@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light dark" />
+
     <title>TripTrakerDeduct — Downloads</title>
     <meta
       name="description"
@@ -18,11 +19,11 @@
     />
 
     <link rel="stylesheet" href="styles.css" />
-
     <link rel="icon" href="favicon.ico" />
   </head>
 
   <body>
+    <!-- Header -->
     <header class="site-header">
       <div class="container">
         <div class="brand">
@@ -41,6 +42,7 @@
       </div>
     </header>
 
+    <!-- Main -->
     <main>
       <section class="hero">
         <div class="container hero-grid">
@@ -52,14 +54,22 @@
               Mobile-first, with optional desktop tools.
             </p>
 
+            <!-- LOCKED DOWNLOAD BUTTONS -->
             <div class="cta-row" id="downloads">
-              <!-- Replace # with your actual file links -->
-              <a class="btn primary" href="#" download>
+              <a
+                class="btn primary"
+                href="./TripTrakerDeduct-Android-latest.apk"
+                download
+              >
                 <span class="btn-title">Download for Android</span>
                 <span class="btn-sub">APK</span>
               </a>
 
-              <a class="btn" href="#" download>
+              <a
+                class="btn"
+                href="./TripTrakerDeduct-Windows-latest.zip"
+                download
+              >
                 <span class="btn-title">Download for Windows</span>
                 <span class="btn-sub">Installer / ZIP</span>
               </a>
@@ -81,25 +91,35 @@
             </div>
 
             <p class="fineprint">
-              By downloading, you acknowledge this is beta software. Always verify your logs and
-              consult a tax professional for specific tax advice.
+              By downloading, you acknowledge this is beta software.
+              Always verify your logs and consult a tax professional for tax advice.
             </p>
           </div>
 
+          <!-- Side card -->
           <div class="hero-card">
             <div class="card">
               <h2>Quick tips</h2>
               <ul class="list">
-                <li><strong>Android:</strong> If blocked, allow installs from “unknown sources.”</li>
-                <li><strong>Windows:</strong> SmartScreen may warn—choose “More info” → “Run anyway.”</li>
-                <li><strong>Best practice:</strong> Log purpose + odometer at trip start/end.</li>
+                <li>
+                  <strong>Android:</strong> Allow installs from “unknown sources”
+                  if prompted.
+                </li>
+                <li>
+                  <strong>Windows:</strong> SmartScreen may warn — choose
+                  “More info” → “Run anyway.”
+                </li>
+                <li>
+                  <strong>Best practice:</strong> Log purpose + odometer at trip
+                  start/end.
+                </li>
               </ul>
 
               <div class="divider"></div>
 
               <h3 id="whats-new">What’s new (recent)</h3>
               <ul class="list compact">
-                <li>Stability fixes + smoother navigation</li>
+                <li>Stability fixes and smoother navigation</li>
                 <li>Improved date entry (auto-slash)</li>
                 <li>Better calendar import UX</li>
                 <li>Trip purpose dropdown + persistence</li>
@@ -109,12 +129,14 @@
         </div>
       </section>
 
+      <!-- Help -->
       <section class="section" id="help">
         <div class="container">
           <div class="section-head">
             <h2>Need help?</h2>
             <p>
-              If something looks off, send the details (device/OS, steps, and what you expected).
+              If something looks off, include your device/OS, steps,
+              and what you expected to happen.
             </p>
           </div>
 
@@ -122,41 +144,11 @@
             <div class="help-card">
               <h3>Feedback</h3>
               <p>
-                Tell me what you love, what’s confusing, and what would save you time on the road.
+                Share what works, what’s confusing, and what would save you time.
               </p>
             </div>
 
             <div class="help-card">
               <h3>Troubleshooting</h3>
               <p>
-                If installs fail, try re-downloading the file and checking your device security prompts.
-              </p>
-            </div>
-
-            <div class="help-card">
-              <h3>Privacy</h3>
-              <p>
-                Your trip logs are yours. Keep backups and protect your device access.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="container footer-row">
-        <p class="footer-text">
-          © <span id="year"></span> TripTrakerDeduct. All rights reserved.
-        </p>
-        <p class="footer-text subtle">
-          Built for clean, simple mileage tracking.
-        </p>
-      </div>
-    </footer>
-
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-  </body>
-</html>
+                If a
