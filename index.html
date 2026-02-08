@@ -54,11 +54,11 @@
               Mobile-first, with optional desktop tools.
             </p>
 
-            <!-- LOCKED DOWNLOAD BUTTONS -->
+            <!-- DOWNLOAD BUTTONS (LOCKED) -->
             <div class="cta-row" id="downloads">
               <a
                 class="btn primary"
-                href="./TripTrakerDeduct-Android-latest.apk"
+                href="https://github.com/michaelcain123/triptrakerdeduct/releases/latest/download/TripTrakerDeduct-Android-latest.apk"
                 download
               >
                 <span class="btn-title">Download for Android</span>
@@ -67,7 +67,7 @@
 
               <a
                 class="btn"
-                href="./TripTrakerDeduct-Windows-latest.zip"
+                href="https://github.com/michaelcain123/triptrakerdeduct/releases/latest/download/TripTrakerDeduct-Windows-latest.zip"
                 download
               >
                 <span class="btn-title">Download for Windows</span>
@@ -93,6 +93,13 @@
             <p class="fineprint">
               By downloading, you acknowledge this is beta software.
               Always verify your logs and consult a tax professional for tax advice.
+            </p>
+
+            <p class="fineprint">
+              Checksums:
+              <a href="https://github.com/michaelcain123/triptrakerdeduct/releases/latest/download/SHA256SUMS.txt" download>
+                SHA256SUMS.txt
+              </a>
             </p>
           </div>
 
@@ -151,4 +158,36 @@
             <div class="help-card">
               <h3>Troubleshooting</h3>
               <p>
-                If a
+                If installs fail, re-download and check system security prompts.
+              </p>
+            </div>
+
+            <div class="help-card">
+              <h3>Privacy</h3>
+              <p>
+                Your trip data stays on your device. Keep backups secure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p class="footer-text">
+          © <span id="year"></span> TripTrakerDeduct. All rights reserved.
+        </p>
+        <p class="footer-text subtle">
+          Built for clean, simple mileage tracking.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
