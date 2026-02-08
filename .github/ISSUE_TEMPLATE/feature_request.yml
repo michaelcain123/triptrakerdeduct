@@ -1,0 +1,63 @@
+name: 🐞 Bug report
+description: Something isn’t working as expected
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug in TripTrakerDeduct.
+        Please fill out the details below so it’s actionable.
+
+  - type: input
+    id: platform
+    attributes:
+      label: Platform
+      description: Where did this occur?
+      placeholder: Android 16 (Pixel), Windows 11, etc.
+    validations:
+      required: true
+
+  - type: input
+    id: app_version
+    attributes:
+      label: App version
+      placeholder: 0.2.x
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the bug and what you expected instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Step-by-step instructions help reproduce the issue.
+      placeholder: |
+        1. Open the app
+        2. Tap ...
+        3. Observe error
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened?
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Screenshots / logs (optional)
+      description: Drag and drop images or paste logs here.
+    validations:
+      required: false
