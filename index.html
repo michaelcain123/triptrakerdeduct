@@ -1,42 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>TripTrakerDeduct</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header class="hero">
-    <h1>TripTrakerDeduct</h1>
-    <p class="tagline">
-      Simple, practical mileage & trip tracking for tax deductions.
-    </p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>TripTrakerDeduct</h1>
+      </div>
 
-    <div class="downloads">
-      <a
-        class="button primary"
-        href="https://github.com/michaelcain123/Google-Calendar-ICS-import-returns-0-events-despite-valid-VEVENTs/releases/tag/v0.2.0"
-        target="_blank"
-        rel="noopener"
-      >
-        Download for Android
-      </a>
+      <nav class="header-actions" aria-label="Downloads">
+        <a class="btn" href="#" rel="noopener">Download for Android</a>
+        <a class="btn" href="#" rel="noopener">Download for Windows</a>
+      </nav>
+    </div>
 
-      <a
-        class="button secondary"
-        href="https://github.com/michaelcain123/Google-Calendar-ICS-import-returns-0-events-despite-valid-VEVENTs/releases/tag/v0.2.0"
-        target="_blank"
-        rel="noopener"
-      >
-        Download for Windows
-      </a>
+    <div class="container">
+      <p class="tagline">Simple, practical mileage &amp; trip tracking for tax deductions.</p>
     </div>
   </header>
 
-  <main class="content">
-    <section>
+  <main class="container">
+    <section class="card">
       <h2>What it does</h2>
       <ul>
         <li>Log trips with dates, mileage, vehicle, and purpose</li>
@@ -47,13 +37,9 @@
       </ul>
     </section>
 
-    <section>
+    <section class="card">
       <h2>Current status</h2>
-      <p>
-        TripTrakerDeduct is currently in <strong>beta</strong>.
-        Real-world testing and feedback are welcome and appreciated.
-      </p>
-
+      <p>TripTrakerDeduct is currently in beta. Real-world testing and feedback are welcome and appreciated.</p>
       <ul>
         <li>Calendar (ICS) import is still under investigation</li>
         <li>Route planning is not yet wired to live calendar data</li>
@@ -61,29 +47,18 @@
       </ul>
     </section>
 
-    <section>
+    <section class="card">
       <h2>Get involved</h2>
+      <p>Feedback, bug reports, and feature ideas are encouraged.</p>
       <p>
-        Feedback, bug reports, and feature ideas are encouraged.
-      </p>
-      <p>
-        Visit the project on GitHub:
-        <br />
-        <a
-          href="https://github.com/michaelcain123/Google-Calendar-ICS-import-returns-0-events-despite-valid-VEVENTs"
-          target="_blank"
-          rel="noopener"
-        >
-          View repository & releases
-        </a>
+        Visit the project on GitHub:<br />
+        View repository &amp; releases
       </p>
     </section>
-  </main>
 
-  <footer class="footer">
-    <p>
-      © 2026 TripTrakerDeduct · Beta software · Use at your own discretion
-    </p>
-  </footer>
+    <footer class="site-footer">
+      <p>© 2026 TripTrakerDeduct · Beta software · Use at your own discretion</p>
+    </footer>
+  </main>
 </body>
 </html>
