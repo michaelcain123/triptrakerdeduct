@@ -1,5 +1,5 @@
 /* =========================================================
-   TripTrakerDeduct — Material-ish Theme (CLEAN & FIXED)
+   TripTrakerDeduct — Clean Material-ish Theme
    ========================================================= */
 
 /* ---------- Design tokens ---------- */
@@ -99,12 +99,12 @@ body {
 }
 
 /* ---------- ICON SIZE FIX ---------- */
-.icon,
-.download-button svg {
+.download-button svg,
+.download-button .icon {
   width: 18px;
   height: 18px;
-  display: inline-block;
   flex-shrink: 0;
+  display: inline-block;
 }
 
 /* ---------- Cards ---------- */
@@ -140,7 +140,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ---------- Screenshots (NO JS) ---------- */
+/* ---------- Screenshots ---------- */
 .shots {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -149,7 +149,6 @@ a:hover {
 }
 
 .shot {
-  margin: 0;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
@@ -159,10 +158,7 @@ a:hover {
 .shot img {
   width: 100%;
   height: auto;
-  max-height: 420px;
-  object-fit: contain;
   display: block;
-  background: #000;
 }
 
 .shot figcaption {
@@ -179,7 +175,7 @@ a:hover {
   padding: 24px 0 12px;
 }
 
-/* ---------- Responsive ---------- */
+/* ---------- Mobile ---------- */
 @media (max-width: 680px) {
   .header-inner {
     flex-direction: column;
@@ -195,12 +191,6 @@ a:hover {
     justify-content: center;
   }
 
-  .shots {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (min-width: 900px) {
   .shots {
     grid-template-columns: 1fr;
   }
