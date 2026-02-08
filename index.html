@@ -8,8 +8,8 @@
 </head>
 
 <body>
-  <!-- CSS-only theme toggle -->
-  <input class="theme-toggle" type="checkbox" id="themeToggle" aria-label="Toggle dark mode" />
+  <!-- CSS-only dark mode toggle -->
+  <input type="checkbox" id="theme-toggle" class="theme-toggle" />
 
   <header class="site-header">
     <div class="container header-inner">
@@ -17,31 +17,17 @@
         <h1>TripTrakerDeduct</h1>
       </div>
 
-      <div class="header-actions">
-        <label class="toggle" for="themeToggle" title="Toggle dark mode">
-          <span class="toggle-icon" aria-hidden="true">
-            <!-- moon/sun -->
-            <svg class="icon" viewBox="0 0 24 24" fill="none">
-              <path d="M21 12.6A8.5 8.5 0 0 1 11.4 3 7 7 0 1 0 21 12.6Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
+      <nav class="header-actions" aria-label="Downloads">
+        <!-- Toggle button (CSS-only) -->
+        <label class="toggle" for="theme-toggle" aria-label="Toggle dark mode">
           <span class="toggle-text">Dark</span>
         </label>
 
-        <nav class="downloads" aria-label="Downloads">
+        <div class="downloads">
           <a
             href="https://github.com/michaelcain123/Google-Calendar-ICS-import-returns-0-events-despite-valid-VEVENTs/releases/download/v0.2.0/TripTrakerDeduct-android-release.apk"
             class="download-button"
           >
-            <span class="btn-icon" aria-hidden="true">
-              <!-- Android icon -->
-              <svg class="icon" viewBox="0 0 24 24" fill="none">
-                <path d="M7 9.5 5.5 7.2M17 9.5 18.5 7.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <path d="M8 10h8a3 3 0 0 1 3 3v5a2 2 0 0 1-2 2h-1v-3H8v3H7a2 2 0 0 1-2-2v-5a3 3 0 0 1 3-3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                <path d="M9 10V8a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <path d="M9.5 14v.5M14.5 14v.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-            </span>
             Download for Android
           </a>
 
@@ -49,19 +35,10 @@
             href="https://github.com/michaelcain123/Google-Calendar-ICS-import-returns-0-events-despite-valid-VEVENTs/releases/download/v0.2.0/TripTrakerDeduct-Windows-v0.2.0-beta.1+3.zip"
             class="download-button"
           >
-            <span class="btn-icon" aria-hidden="true">
-              <!-- Windows icon -->
-              <svg class="icon" viewBox="0 0 24 24" fill="none">
-                <path d="M3 5.5 11 4v8H3V5.5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                <path d="M13 3.7 21 3v9h-8V3.7Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                <path d="M3 13h8v8l-8-1.5V13Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                <path d="M13 13h8v9l-8-1.3V13Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-              </svg>
-            </span>
             Download for Windows
           </a>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </div>
 
     <div class="container">
@@ -93,26 +70,26 @@
 
     <section class="card">
       <h2>Screenshots</h2>
-      <p class="muted">Add images to <code>assets/screenshots/</code> and keep the filenames below.</p>
 
-      <div class="shots" role="list">
-        <figure class="shot" role="listitem">
-          <img src="assets/screenshots/trip-home.png" alt="Trip list home screen" loading="lazy" />
-          <figcaption>Trips</figcaption>
+      <!-- No-JS screenshot grid. Add these files to: assets/screenshots/ -->
+      <div class="shots">
+        <figure class="shot">
+          <img src="assets/screenshots/home.png" alt="TripTrakerDeduct — Home" />
+          <figcaption>Home</figcaption>
         </figure>
 
-        <figure class="shot" role="listitem">
-          <img src="assets/screenshots/trip-detail.png" alt="Trip detail screen" loading="lazy" />
+        <figure class="shot">
+          <img src="assets/screenshots/trip.png" alt="TripTrakerDeduct — Trip details" />
           <figcaption>Trip details</figcaption>
         </figure>
 
-        <figure class="shot" role="listitem">
-          <img src="assets/screenshots/vehicles.png" alt="Vehicle management screen" loading="lazy" />
+        <figure class="shot">
+          <img src="assets/screenshots/vehicles.png" alt="TripTrakerDeduct — Vehicles" />
           <figcaption>Vehicles</figcaption>
         </figure>
 
-        <figure class="shot" role="listitem">
-          <img src="assets/screenshots/export.png" alt="Export screen" loading="lazy" />
+        <figure class="shot">
+          <img src="assets/screenshots/export.png" alt="TripTrakerDeduct — Export" />
           <figcaption>Export</figcaption>
         </figure>
       </div>
